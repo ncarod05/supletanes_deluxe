@@ -1,0 +1,1 @@
+En este proyecto, trabajamos en una página de venta de suplementos alimenticios, utilizado HTML y CSS para el diseño y estructura, además de JavaScript para las validaciones.
