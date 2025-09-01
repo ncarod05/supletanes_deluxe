@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes Somos | Supletanes Deluxe</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand custom-brand" href="#">Supletanes Deluxe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link custom-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active custom-link" aria-current="page" href="#">Quienes somos</a>
+            </li>
+          </ul>
+          <form class="d-flex align-items-center" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+            <button class="btn btn-danger me-3" type="submit">Buscar</button>
+          </form>
+          <div class="d-flex align-items-center gap-3">
+            <a href="carrito.html" class="text-white text-decoration-none position-relative" title="Carrito de compras">
+              <i class="bi bi-cart3 fs-4"></i>
+            </a>
+            <div class="dropdown">
+              <a href="#" class="text-white text-decoration-none d-flex align-items-center" id="userDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false" title="Mi cuenta">
+                <i class="bi bi-person-circle fs-4"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="usuario.html">Mi Perfil</a></li>
+                <li><a class="dropdown-item" href="pedidos.html">Mis Pedidos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="logout.html">Cerrar sesión</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+
+    <div id="carouselExampleCaptions" class="carousel slide mb-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/img/Mappa.png" class="d-block w-100" alt="Suplemento 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Donde puedes encontrarnos</h5>
+            <p>Freire 867, 8071189 San Bernardo, Región Metropolitana</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Stock.jpg" class="d-block w-100" alt="Suplemento 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Nuestro Stock</h5>
+            <p>Lo quieres? Lo tenemos!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Tienda.jpg" class="d-block w-100" alt="Suplemento 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Siempre disponibles</h5>
+            <p>Ven a nuestra tienda fisica cuando quieras!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <div class="text-center">
+      <h1 class="mb-4">Sobre Supletanes Deluxe</h1>
+
+      <hr class="my-4">
+
+      <p class="fs-5">
+        Supletanes Deluxe es una tienda online dedicada a entregar suplementos deportivos de la más alta calidad,
+        directamente a la puerta de nuestros clientes en Chile. Con más de 6 años de experiencia,
+        operamos en más de 9 puntos del país, incluyendo ciudades clave como Santiago, Puerto Montt,
+        Villarica, Nacimiento, Viña del Mar, Valparaíso y Concepción.
+      </p>
+
+      <p class="fs-5">
+        Nuestra misión es conectar a los atletas y entusiastas del fitness con productos que
+        realmente potencien su rendimiento, promoviendo un estilo de vida saludable, activo y sostenible.
+      </p>
+
+      <hr class="my-4">
+
+      <h2>Misión</h2>
+      <p class="fs-5">
+        Nuestra misión es proporcionar suplementos deportivos confiables y efectivos directamente a nuestros clientes,
+        garantizando calidad en cada entrega. Nos comprometemos a fortalecer la relación entre consumidores y
+        fabricantes responsables, apoyando prácticas sostenibles y fomentando la educación nutricional.
+      </p>
+
+      <hr class="my-4">
+
+      <h2>Visión</h2>
+      <p class="fs-5">
+        Nuestra visión es ser la tienda online líder en distribución de suplementos deportivos en Chile,
+        reconocida por nuestra calidad, servicio y compromiso con la salud. Queremos expandirnos a nivel nacional
+        e internacional, estableciendo un nuevo estándar en el mundo del fitness y la suplementación.
+      </p>
+
+      <hr class="my-4">
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
