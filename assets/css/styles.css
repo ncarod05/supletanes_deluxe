@@ -2,6 +2,8 @@ body {
     background-color: #FFFFFF;
     color: #111111;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 h1, h2, h3 {
@@ -9,9 +11,8 @@ h1, h2, h3 {
     color: #264653;
 }
 
-/* Estilo del navbar */
 .custom-navbar {
-  background-color: #264653; /* Azul acero */
+  background-color: #264653;
 }
 
 .custom-brand {
@@ -26,10 +27,9 @@ h1, h2, h3 {
 }
 
 .custom-link:hover {
-  color: #FFD166 !important; /* Un tono amarillo/limón para hover */
+  color: #FFD166 !important;
 }
 
-/* Estilo del botón de búsqueda */
 .btn-danger {
   background-color: #D62828;
   border: none;
@@ -106,7 +106,6 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
-
 #carouselExampleCaptions .carousel-item img {
   height: 500px;
   max-width: 800px;
@@ -123,7 +122,6 @@ h1, h2, h3 {
     font-size: 2rem;
     cursor: pointer;
 }
-
 /* Zona de usuario.html*/
 .usuario-main {
   background-color: #264653;
@@ -161,3 +159,8 @@ h1, h2, h3 {
   margin-top: 10px;
 }
 
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
