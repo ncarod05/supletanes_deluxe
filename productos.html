@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseñas y Calificación | Supletanes Deluxe</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand custom-brand" href="#">Supletanes Deluxe</a>
+                <a class="navbar-brand custom-brand" href="index.html">Supletanes Deluxe</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,33 +24,28 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="index.html">Inicio</a>
+                            <a class="nav-link active custom-link" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link custom-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active custom-link" aria-current="page" href="/Quienes.html">Quienes somos</a>
+                            <a class="nav-link custom-link" href="Quienes.html">Quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#">Reseñas</a>
+                            <a class="nav-link custom-link" href="/Reseñas.html">Reseñas</a>
                         </li>
                     </ul>
-                    
-                    <!-- Formulario de búsqueda -->
                     <form class="d-flex align-items-center" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
                         <button class="btn btn-danger me-3" type="submit">Buscar</button>
                     </form>
-
-                    <!-- Íconos de carrito y cuenta de usuario -->
                     <div class="d-flex align-items-center gap-3">
                         <!-- Ícono carrito -->
                         <a href="carrito.html" class="text-white text-decoration-none position-relative"
                             title="Carrito de compras">
                             <i class="bi bi-cart3 fs-4"></i>
                         </a>
-                        <!-- Dropdown de cuenta de usuario -->
                         <div class="dropdown">
                             <a href="#" class="text-white text-decoration-none d-flex align-items-center"
                                 id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Mi cuenta">
@@ -59,7 +54,9 @@
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                                 <li><a class="dropdown-item" href="usuario.html">Mi Perfil</a></li>
                                 <li><a class="dropdown-item" href="pedidos.html">Mis Pedidos</a></li>
-                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="logout.html">Cerrar sesión</a></li>
                             </ul>
                         </div>
@@ -68,70 +65,53 @@
             </div>
         </nav>
     </header>
-
-    <main class="container my-5">
-
-        <h1 class="mb-4 text-center">Reseñas de Productos</h1>
-
-        <section id="reviews">
-            <div class="card mb-3 product-card">
-                <div class="card-body">
-                    <h5 class="card-title">Suplemento X - Excelente Producto</h5>
-                    <div class="rating mb-3">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star text-muted"></i>
+    <main>
+        <div class="container my-4">
+            <div class="row g-3">
+                <!-- Producto 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/prod1.jpg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text flex-grow-1">Descripción corta del producto.</p>
+                            <p class="card-text fw-bold">$15.000</p>
+                            <button class="btn btn-success mt-auto">Agregar al carrito</button>
+                        </div>
                     </div>
-                    <p class="card-text">Este suplemento ha mejorado mi rendimiento en los entrenamientos. Muy recomendable para quienes buscan un boost de energía.</p>
-                    <footer class="blockquote-footer">Juan Pérez <cite title="Source Title">hace 2 días</cite></footer>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/prod2.jpg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Producto 2</h5>
+                            <p class="card-text flex-grow-1">Descripción corta del producto.</p>
+                            <p class="card-text fw-bold">$12.000</p>
+                            <button class="btn btn-success mt-auto">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/img/Prostar 5LB.webp" class="card-img-top" alt="Producto 1"
+                            style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Prostar Whey Protein 5LB</h5>
+                            <p class="card-text flex-grow-1">Mezcla de concentrado y aislado de
+                                proteína de suero de leche, aporta 25gr de proteína. En su version de 5LB con 80
+                                porciones</p>
+                            <p class="card-text fw-bold">$59.990</p>
+                            <button class="btn btn-success mt-auto">
+                                <i class="bi bi-cart-plus me-1"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <div class="card mb-3 product-card">
-                <div class="card-body">
-                    <h5 class="card-title">Suplemento Y - Buen sabor</h5>
-                    <div class="rating mb-3">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star text-muted"></i>
-                        <i class="bi bi-star text-muted"></i>
-                    </div>
-                    <p class="card-text">Sabor increíble, pero el efecto no fue tan potente como esperaba. Buen producto para principiantes.</p>
-                    <footer class="blockquote-footer">María González <cite title="Source Title">hace 5 días</cite></footer>
-                </div>
-            </div>
-        </section>
-
-        <section id="add-review" class="my-5">
-            <h2 class="text-center">Deja tu Reseña</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="reviewTitle" class="form-label">Título de la Reseña</label>
-                    <input type="text" class="form-control" id="reviewTitle" placeholder="Ej. Producto increíble!" required>
-                </div>
-                <div class="mb-3">
-                    <label for="reviewRating" class="form-label">Calificación</label>
-                    <div class="rating" id="starRating">
-                        <i class="bi bi-star-fill text-muted" data-star="1"></i>
-                        <i class="bi bi-star-fill text-muted" data-star="2"></i>
-                        <i class="bi bi-star-fill text-muted" data-star="3"></i>
-                        <i class="bi bi-star-fill text-muted" data-star="4"></i>
-                        <i class="bi bi-star-fill text-muted" data-star="5"></i>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="reviewText" class="form-label">Comentario</label>
-                    <textarea class="form-control" id="reviewText" rows="4" placeholder="Escribe tu reseña..." required></textarea>
-                </div>
-                <button type="submit" class="btn button w-100">Enviar Reseña</button>
-            </form>
-        </section>
-
+        </div>
     </main>
-
     <footer class="custom-footer text-white mt-5 pt-4 pb-4">
         <div class="container">
             <div class="row">
@@ -170,8 +150,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="/assets/Java/estrella.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
