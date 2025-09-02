@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas y Calificación | Supletanes Deluxe</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-brand" href="#">Supletanes Deluxe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active custom-link" aria-current="page" href="/Quienes.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="#">Reseñas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <h1 class="mb-4 text-center">Reseñas de Productos</h1>
+
+        <section id="reviews">
+            <div class="card mb-3 product-card">
+                <div class="card-body">
+                    <h5 class="card-title">Suplemento X - Excelente Producto</h5>
+                    <div class="rating mb-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star text-muted"></i>
+                    </div>
+                    <p class="card-text">Este suplemento ha mejorado mi rendimiento en los entrenamientos. Muy recomendable para quienes buscan un boost de energía.</p>
+                    <footer class="blockquote-footer">Juan Pérez <cite title="Source Title">hace 2 días</cite></footer>
+                </div>
+            </div>
+
+            <div class="card mb-3 product-card">
+                <div class="card-body">
+                    <h5 class="card-title">Suplemento Y - Buen sabor</h5>
+                    <div class="rating mb-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star text-muted"></i>
+                        <i class="bi bi-star text-muted"></i>
+                    </div>
+                    <p class="card-text">Sabor increíble, pero el efecto no fue tan potente como esperaba. Buen producto para principiantes.</p>
+                    <footer class="blockquote-footer">María González <cite title="Source Title">hace 5 días</cite></footer>
+                </div>
+            </div>
+        </section>
+
+        <section id="add-review" class="my-5">
+            <h2 class="text-center">Deja tu Reseña</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="reviewTitle" class="form-label">Título de la Reseña</label>
+                    <input type="text" class="form-control" id="reviewTitle" placeholder="Ej. Producto increíble!" required>
+                </div>
+                <div class="mb-3">
+                    <label for="reviewRating" class="form-label">Calificación</label>
+                    <div class="rating" id="starRating">
+                        <i class="bi bi-star-fill text-muted" data-star="1"></i>
+                        <i class="bi bi-star-fill text-muted" data-star="2"></i>
+                        <i class="bi bi-star-fill text-muted" data-star="3"></i>
+                        <i class="bi bi-star-fill text-muted" data-star="4"></i>
+                        <i class="bi bi-star-fill text-muted" data-star="5"></i>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="reviewText" class="form-label">Comentario</label>
+                    <textarea class="form-control" id="reviewText" rows="4" placeholder="Escribe tu reseña..." required></textarea>
+                </div>
+                <button type="submit" class="btn button w-100">Enviar Reseña</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Supletanes Deluxe. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/assets/Java/estrella.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
