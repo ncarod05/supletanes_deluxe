@@ -69,3 +69,33 @@ h1, h2, h3 {
     border-radius: 8px;
     background-color: #FFFFFF;
 }
+
+#mainCarousel .carousel-item img {
+  height: 650px;
+  object-fit:cover;
+}
+
+.custom-footer {
+    background-color: #264653;
+}
+
+.footer-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    color: #FFD166;
+}
+
+.footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #FFD166;
+    text-decoration: underline;
+}
+
+.custom-footer i {
+    color: #FFD166;
+}
