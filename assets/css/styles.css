@@ -70,44 +70,6 @@ h1, h2, h3 {
     background-color: #FFFFFF;
 }
 
-/* Zona de usuario.html */
-/* Fondo general del área de usuario */
-.usuario-main {
-  background-color: #264653;
-  padding: 40px 0;
-}
-
-/* Tarjeta del perfil */
-.usuario-card {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* Encabezado de la tarjeta */
-.usuario-card .card-header {
-  background-color: #1e3d4b; /* tono más oscuro del azul acero */
-  color: #FFFFFF;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 24px;
-}
-
-/* Etiquetas del formulario */
-.usuario-card .form-label {
-  font-weight: bold;
-  color: #264653;
-}
-
-/* Campos del formulario */
-.usuario-card .form-control {
-  border: 1px solid #A8A8A8;
-  border-radius: 5px;
-}
-
-/* Botón de guardar */
-.usuario-card .button {
-  margin-top: 10px;
-}
 #mainCarousel .carousel-item img {
   height: 650px;
   object-fit:cover;
@@ -161,3 +123,41 @@ h1, h2, h3 {
     font-size: 2rem;
     cursor: pointer;
 }
+
+/* Zona de usuario.html*/
+.usuario-main {
+  background-color: #264653;
+  padding: 40px 0;
+}
+
+/* Tarjeta del perfil del usuario */
+.usuario-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.usuario-card .card-header {
+  background-color: #1e3d4b;
+  color: #FFFFFF;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+}
+
+/* Etiquetas del formulario */
+.usuario-card .form-label {
+  font-weight: bold;
+  color: #264653;
+}
+
+/* Campos del formulario */
+.usuario-card .form-control {
+  border: 1px solid #A8A8A8;
+  border-radius: 5px;
+}
+
+/* Botón de guardar */
+.usuario-card .button {
+  margin-top: 10px;
+}
+
