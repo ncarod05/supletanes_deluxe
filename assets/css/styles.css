@@ -2,6 +2,8 @@ body {
     background-color: #FFFFFF;
     color: #111111;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 h1, h2, h3 {
@@ -9,9 +11,8 @@ h1, h2, h3 {
     color: #264653;
 }
 
-/* Estilo del navbar */
 .custom-navbar {
-  background-color: #264653; /* Azul acero */
+  background-color: #264653;
 }
 
 .custom-brand {
@@ -26,10 +27,9 @@ h1, h2, h3 {
 }
 
 .custom-link:hover {
-  color: #FFD166 !important; /* Un tono amarillo/limón para hover */
+  color: #FFD166 !important;
 }
 
-/* Estilo del botón de búsqueda */
 .btn-danger {
   background-color: #D62828;
   border: none;
@@ -106,7 +106,6 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
-
 #carouselExampleCaptions .carousel-item img {
   height: 500px;
   max-width: 800px;
@@ -122,4 +121,46 @@ h1, h2, h3 {
 #starRating i {
     font-size: 2rem;
     cursor: pointer;
+}
+/* Zona de usuario.html*/
+.usuario-main {
+  background-color: #264653;
+  padding: 40px 0;
+}
+
+/* Tarjeta del perfil del usuario */
+.usuario-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.usuario-card .card-header {
+  background-color: #1e3d4b;
+  color: #FFFFFF;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+}
+
+/* Etiquetas del formulario */
+.usuario-card .form-label {
+  font-weight: bold;
+  color: #264653;
+}
+
+/* Campos del formulario */
+.usuario-card .form-control {
+  border: 1px solid #A8A8A8;
+  border-radius: 5px;
+}
+
+/* Botón de guardar */
+.usuario-card .button {
+  margin-top: 10px;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
