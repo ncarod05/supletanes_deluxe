@@ -66,21 +66,45 @@
         </nav>
 
     </header>
-    <main>
-        <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/Nutricion-deportiva.jpg" class="d-block w-100" alt="Imagen 1">
+    <div id="carouselBanner" class="carousel slide carousel-banner" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Imagen 1 -->
+            <div class="carousel-item active">
+                <img src="assets/img/suplementos-deportivos.webp" class="d-block w-100" alt="Promo 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>¡Bienvenido a Supletanes Deluxe!</h5>
+                    <p>Encuentra los mejores suplementos al mejor precio.</p>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/img/suplementos-deportivos.webp" class="d-block w-100" alt="Imagen 2">
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="carousel-item">
+                <img src="assets/img/Nutricion-deportiva.jpg" class="d-block w-100" alt="Promo 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>🔥 Ofertas exclusivas 🔥</h5>
+                    <p>Aprovecha descuentos especiales por tiempo limitado.</p>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/img/suplementos_deportivos_1_9f22bd9520.png" class="d-block w-100" alt="Imagen 3">
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="carousel-item">
+                <img src="assets/img/suplementos_deportivos_1_9f22bd9520.png" class="d-block w-100" alt="Promo 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Envíos a todo Chile</h5>
+                    <p>Rápido, seguro y con garantía de calidad.</p>
                 </div>
             </div>
         </div>
 
+        <!-- Botones anterior / siguiente -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <main>
         <section class="top-products py-5">
             <div class="container">
                 <h2 class="section-title mb-4 text-center">Productos más vendidos del momento</h2>

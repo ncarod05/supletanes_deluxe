@@ -70,11 +70,68 @@ h1, h2, h3 {
     background-color: #FFFFFF;
 }
 
+/* Barra lateral en productos*/
+.sidebar {
+  background-color: #264653; /* azul verdoso */
+  color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.sidebar h5, .sidebar-title {
+  color: #FFD166; /* amarillo */
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+}
+
+.sidebar .form-check-label {
+  font-weight: 500;
+}
+
+.sidebar input[type="text"],
+.sidebar .form-range {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+}
+
+/*Carrusel banner del Index */
+.carousel-banner .carousel-item img {
+  max-height: 500px; /* controla la altura */
+  object-fit: cover; /* ajusta la imagen sin deformarla */
+}
+
+.carousel-banner .carousel-caption {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+}
+
+.carousel-banner .carousel-caption h5 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 70px;
+  color: #FFD166; /* amarillo de tu paleta */
+  text-shadow: 2px 2px 6px #000;
+}
+
+.carousel-banner .carousel-caption p {
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* Carrusel en Quienes Somos */
 #mainCarousel .carousel-item img {
   height: 650px;
   object-fit:cover;
 }
 
+/* Footer */
 .custom-footer {
     background-color: #264653;
 }
