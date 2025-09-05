@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-brand" href="index.html">Supletanes Deluxe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active custom-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="Quienes.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="/Reseñas.html">Reseñas</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                        <button class="btn btn-danger me-3" type="submit">Buscar</button>
+                    </form>
+                    <div class="d-flex align-items-center gap-3">
+                        <!-- Ícono carrito -->
+                        <a href="carrito.html" class="text-white text-decoration-none position-relative"
+                            title="Carrito de compras">
+                            <i class="bi bi-cart3 fs-4"></i>
+                        </a>
+                        <div class="dropdown">
+                            <a href="#" class="text-white text-decoration-none d-flex align-items-center"
+                                id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Mi cuenta">
+                                <i class="bi bi-person-circle fs-4"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="usuario.html">Mi Perfil</a></li>
+                                <li><a class="dropdown-item" href="pedidos.html">Mis Pedidos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="logout.html">Cerrar sesión</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="product-page container my-5">
+            <div class="row">
+                <!-- Columna izquierda: Imagen del producto -->
+                <div class="col-md-5">
+                    <img src="assets/img/Prostar 5LB.webp" alt="Prostar Whey Protein 5LB" class="img-fluid rounded">
+                </div>
+
+                <!-- Columna derecha: Información del producto -->
+                <div class="col-md-7">
+                    <!-- Marca -->
+                    <p class="text-uppercase text-muted brand-text">Ultimate Nutrition</p>
+
+                    <!-- Nombre del producto -->
+                    <h2 class="mb-3">Prostar Whey Protein 5LB</h2>
+
+                    <!-- Categoría -->
+                    <p class="text-muted mb-2"><strong>Categoría:</strong> Proteínas</p>
+
+                    <!-- Descripción -->
+                    <p class="mb-3">
+                        Mezcla de concentrado y aislado de proteína de suero de leche, aporta 25gr de proteína.
+                        En su versión de 5LB con 80 porciones.
+                    </p>
+
+                    <!-- Precio con oferta -->
+                    <div class="mb-3 price-container-vertical">
+                        <span class="card-price-highlight">
+                            <i class="bi bi-tag-fill me-1"></i> $59.990
+                        </span>
+                        <span class="old-price">$69.990</span>
+                    </div>
+
+
+                    <!-- Selección de sabor -->
+                    <div class="mb-3">
+                        <label for="sabor" class="form-label">Sabor:</label>
+                        <select id="sabor" class="form-select w-50">
+                            <option value="chocolate">Chocolate</option>
+                            <option value="vainilla">Vainilla</option>
+                            <option value="fresa">Fresa</option>
+                        </select>
+                    </div>
+
+                    <!-- Cantidad -->
+                    <div class="mb-3">
+                        <label for="cantidad" class="form-label">Cantidad:</label>
+                        <input type="number" id="cantidad" class="form-control w-25" value="1" min="1">
+                    </div>
+
+                    <!-- Método de despacho -->
+                    <div class="mb-3">
+                        <label for="despacho" class="form-label">Método de despacho:</label>
+                        <select id="despacho" class="form-select w-50">
+                            <option value="retiro">Retiro en tienda</option>
+                            <option value="domicilio">Domicilio</option>
+                        </select>
+                    </div>
+
+                    <!-- Botones: carrito y lista de deseos -->
+                    <div class="d-flex gap-3 mb-3">
+                        <!-- Botón añadir al carrito -->
+                        <button class="btn btn-success btn-lg flex-grow-1">
+                            <i class="bi bi-cart-plus me-1"></i> Agregar al carrito
+                        </button>
+
+                        <!-- Botón añadir a lista de deseos -->
+                        <button class="btn btn-outline-danger btn-lg flex-grow-1">
+                            <i class="bi bi-heart me-1"></i> Agregar a deseos
+                        </button>
+                    </div>
+
+                    <!-- Tabla nutricional -->
+                    <div class="mt-4 product-page-nutrition">
+                        <h4>Información nutricional</h4>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Componente</th>
+                                    <th>Por porción (30g)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Calorías</td>
+                                    <td>120 kcal</td>
+                                </tr>
+                                <tr>
+                                    <td>Proteínas</td>
+                                    <td>25 g</td>
+                                </tr>
+                                <tr>
+                                    <td>Grasas</td>
+                                    <td>1.5 g</td>
+                                </tr>
+                                <tr>
+                                    <td>Carbohidratos</td>
+                                    <td>3 g</td>
+                                </tr>
+                                <tr>
+                                    <td>Azúcares</td>
+                                    <td>1 g</td>
+                                </tr>
+                                <tr>
+                                    <td>Sodio</td>
+                                    <td>50 mg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de reseñas -->
+            <div id="reseñas" class="mt-5">
+                <h3>Reseñas de clientes</h3>
+                <!-- Aquí iría un listado de reseñas o plugin de comentarios -->
+            </div>
+        </div>
+    </main>
+    <footer class="custom-footer text-white mt-5 pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Marca -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-title">Supletanes Deluxe</h4>
+                    <p>Suplementos de calidad premium</p>
+                </div>
+
+                <!-- Columna 2: Enlaces -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="productos.html" class="footer-link">Productos</a></li>
+                        <li><a href="Quienes.html" class="footer-link">Quienes somos</a></li>
+                        <li><a href="carrito.html" class="footer-link">Carrito</a></li>
+                        <li><a href="usuario.html" class="footer-link">Mi cuenta</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="col-md-4">
+                    <h5>Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope-fill me-2"></i> contacto@supletanesdeluxe.com</li>
+                        <li><i class="bi bi-phone-fill me-2"></i> +56 9 0000 9999</li>
+                        <li><i class="bi bi-geo-alt-fill me-2"></i> San Bernardo, Región Metropolitana, Chile</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: #FFD166;">
+            <div class="text-center small">
+                © 2025 Supletanes Deluxe. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -62,12 +62,97 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
+/* Sticker de oferta en la esquina */
+.promo-sticker {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Diseño pestaña productos */
 .product-card {
     border: 1px solid #A8A8A8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
     border-radius: 8px;
     background-color: #FFFFFF;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card-link:hover .card {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* Marca (texto pequeño arriba del título) */
+.brand-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #264653;
+  letter-spacing: 1px;
+}
+
+/* Precio anterior (tachado en gris) */
+.old-price {
+  font-size: 15px;
+  color: #888888;
+  text-decoration: line-through;
+}
+
+/* Precio destacado */
+.card-price-highlight {
+  background-color: #FFD166;
+  color: #111111;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Solo afecta los precios dentro de la página de producto */
+.product-page .price-container-vertical .old-price {
+  font-size: 18px;  /* más grande que en las cards */
+  margin-left: 10px;
+}
+
+.product-page .price-container-vertical .card-price-highlight {
+  font-size: 30px;          /* más grande */
+  font-weight: 600;         /* más pesado */
+  padding: 10px 20px;       /* más espacio */
+  border-radius: 12px;      /* bordes más redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* sombra más marcada */
+}
+
+/* Solo afecta la tabla en la página de producto */
+.product-page .product-page-nutrition h4 {
+  color: #264653;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.product-page .product-page-nutrition table {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-page .product-page-nutrition th {
+  background-color: #264653;
+  color: #ffffff;
+  text-align: left;
+}
+
+.product-page .product-page-nutrition td {
+  vertical-align: middle;
 }
 
 /* Barra lateral en productos*/
