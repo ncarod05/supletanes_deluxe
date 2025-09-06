@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cerrando sesión</title>
+  <meta http-equiv="refresh" content="3;url=index.html" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main class="container text-center mt-5">
+    <h2>Tu sesión ha sido cerrada</h2>
+    <p>Serás redirigido al inicio en unos segundos...</p>
+  </main>
+  <script>
+    localStorage.removeItem('usuario'); // o sessionStorage.clear()
+  </script>
+</body>
+</html>
