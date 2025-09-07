@@ -32,9 +32,6 @@
                         <li class="nav-item">
                             <a class="nav-link custom-link" href="Quienes.html">Quienes somos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link custom-link" href="/Reseñas.html">Reseñas</a>
-                        </li>
                     </ul>
                     <form class="d-flex align-items-center" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
@@ -99,15 +96,21 @@
                         <span class="old-price">$69.990</span>
                     </div>
 
-
                     <!-- Selección de sabor -->
                     <div class="mb-3">
                         <label for="sabor" class="form-label">Sabor:</label>
                         <select id="sabor" class="form-select w-50">
                             <option value="chocolate">Chocolate</option>
                             <option value="vainilla">Vainilla</option>
-                            <option value="fresa">Fresa</option>
+                            <option value="frutilla">Frutilla</option>
+                            <option value="plátano">Plátano</option>
                         </select>
+                    </div>
+
+                    <!-- Disponibilidad -->
+                    <div class="mb-3">
+                        <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i> Disponible</span>
+                        <p class="text-muted mt-1">Unidades restantes: <strong>15</strong></p>
                     </div>
 
                     <!-- Cantidad -->
@@ -138,51 +141,119 @@
                         </button>
                     </div>
 
-                    <!-- Tabla nutricional -->
-                    <div class="mt-4 product-page-nutrition">
-                        <h4>Información nutricional</h4>
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Componente</th>
-                                    <th>Por porción (30g)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Calorías</td>
-                                    <td>120 kcal</td>
-                                </tr>
-                                <tr>
-                                    <td>Proteínas</td>
-                                    <td>25 g</td>
-                                </tr>
-                                <tr>
-                                    <td>Grasas</td>
-                                    <td>1.5 g</td>
-                                </tr>
-                                <tr>
-                                    <td>Carbohidratos</td>
-                                    <td>3 g</td>
-                                </tr>
-                                <tr>
-                                    <td>Azúcares</td>
-                                    <td>1 g</td>
-                                </tr>
-                                <tr>
-                                    <td>Sodio</td>
-                                    <td>50 mg</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <!-- Descripción + Nutrición -->
+                    <div class="mt-5 product-page-nutrition row section-box">
+                        <div class="col-md-6">
+                            <h4>Descripción del producto</h4>
+                            <p>
+                                Prostar Whey Protein 5LB combina concentrado y aislado de suero de leche
+                                para aportar proteínas de alta calidad. Ideal para recuperación muscular,
+                                bajo en carbohidratos y grasas.
+                            </p>
+                            <ul>
+                                <li>25g proteína por porción</li>
+                                <li>Bajo en grasas y azúcares</li>
+                                <li>80 porciones por envase</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h4>Información nutricional</h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Componente</th>
+                                        <th>Por porción (30g)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Calorías</td>
+                                        <td>120 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Proteínas</td>
+                                        <td>25 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grasas</td>
+                                        <td>1.5 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carbohidratos</td>
+                                        <td>3 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Azúcares</td>
+                                        <td>1 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sodio</td>
+                                        <td>50 mg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Sección de reseñas -->
+            <!-- Sección de reseñas resumidas -->
             <div id="reseñas" class="mt-5">
-                <h3>Reseñas de clientes</h3>
-                <!-- Aquí iría un listado de reseñas o plugin de comentarios -->
+                <h3 class="mb-3">Reseñas de clientes</h3>
+
+                <!-- Valoración global -->
+                <div class="mt-4 mb-4">
+                    <h4>Valoración General</h4>
+                    <div class="d-flex align-items-center">
+                        <div class="rating me-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                        </div>
+                        <span class="text-muted">(4.5/5 basado en 120 reseñas)</span>
+                    </div>
+                </div>
+
+                <!-- Solo 2 reseñas de ejemplo -->
+                <div class="card mb-3 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:#264653;">Excelente Producto</h5>
+                        <div class="rating mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star text-muted"></i>
+                        </div>
+                        <p class="card-text">Excelente proteína, se disuelve bien y sabe rico.</p>
+                        <small class="text-muted">Juan Pérez - hace 2 días</small>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:#264653;">Buen sabor</h5>
+                        <div class="rating mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="card-text">Muy buena calidad y precio competitivo.</p>
+                        <small class="text-muted">María López - hace 5 días</small>
+                    </div>
+                </div>
+
+                <!-- Botón para ir a la página de reseñas completa -->
+                <div class="text-center mt-4">
+                    <a href="reseñas.html" class="button">
+                        <i class="bi bi-chat-left-text me-1"></i> Ver todas las reseñas
+                    </a>
+                </div>
             </div>
         </div>
     </main>
