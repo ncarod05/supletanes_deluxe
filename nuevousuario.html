@@ -81,28 +81,38 @@
                     <div class="card-body">
                         <form id="registroForm">
                             <div class="mb-3">
-                                <label for="nombre" class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Juan Pérez" required />
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Juan" required />
+                                <small class="text-danger"></small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" placeholder="Pérez" required />
+                                <small class="text-danger"></small>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Correo electrónico</label>
                                 <input type="email" class="form-control" id="email" placeholder="juan@example.com"
                                     required />
+                                    <small class="text-danger"></small>
                             </div>
                             <div class="mb-3">
                                 <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control" id="telefono" placeholder="+56 9 1234 5678"
+                                <input type="tel" class="form-control" id="telefono" placeholder="+56912345678"
                                     required />
+                                    <small class="text-danger"></small>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" id="password" placeholder="••••••••"
                                     required />
+                                    <small class="text-danger"></small>
                             </div>
                             <div class="mb-3">
                                 <label for="confirmar" class="form-label">Confirmar contraseña</label>
                                 <input type="password" class="form-control" id="confirmar" placeholder="••••••••"
                                     required />
+                                    <small class="text-danger"></small>
                             </div>
                             <div class="d-grid">
                                 <button type="submit" class="button">Registrarme</button>
