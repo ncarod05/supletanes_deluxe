@@ -350,3 +350,25 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
+/* Agregado para igualar tamaño y distribución de tarjetas de productos */
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .card-text.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
