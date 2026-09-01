@@ -1,0 +1,28 @@
+name: Pipeline CI
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verificar-codigo:
+    name: Validacion de Codigo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Diagnostico
+        run: |
+          echo "Rama: ${{ github.ref }}"
+          echo "Evento: ${{ github.event_name }}"
+          ls -la
+
+      - name: Ejecutar pruebas
+        run: |
+          echo "Ejecutando verificaciones"
