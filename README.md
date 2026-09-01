@@ -8,7 +8,7 @@ En este proyecto, trabajamos en una página de venta de suplementos alimenticios
 Se eligió el modelo GitFlow adaptado. Se utiliza `main` para código estable en producción, `develop` como rama de integración previa, `feature/*` para el desarrollo de nuevas características aisladas y `hotfix/*` para la resolución de errores críticos en producción.
 
 ## 2. Guía de Buenas Prácticas
-* Nombres de ramas: `feature/cambiobienvenida`, `feature/cambiotitulo_idx`, `hotfix/correcion-exclamacion`, `devops`.
+* Nombres de ramas: `feature/cambiobienvenida`, `feature/cambiotitulo_idx`, `hotfix/correcion-exclamacion`, `develop`.
 * Mensajes de commit: formato Conventional Commits (`feat:`, `fix:`, `docs:`).
 * Estrategia de integración: todo cambio hacia `develop` o `main` debe ser mediante Pull Request aprobado tras pasar las validaciones del pipeline.
 
@@ -38,4 +38,4 @@ El pipeline está definido en `.github/workflows/ci.yml`.
 
 ## 5. Declaración sobre Integridad
 * Reflexión Individual:
-  * Integrante 1 (Christopher): Aprendí a configurar flujos de integración continua automatizados con GitHub Actions.
+  * Integrante 1 (Christopher): En esta evaluacion aprendi a configurar flujos automatizados con GitHub Actions.
